@@ -6,7 +6,7 @@ import "./zeppelin/SafeMath.sol";
 
 
 /**
- * @title PAXGImplementation
+ * @title SEEDImplementation
  * @dev this contract is a Pausable ERC20 token with Burn and Mint
  * controlled by a central SupplyController. By implementing PaxosImplementation
  * this contract also includes external methods for setting
