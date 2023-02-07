@@ -17,7 +17,7 @@ import "./zeppelin/SafeMath.sol";
  * Any call to transfer against this contract should fail
  * with insufficient funds since no tokens will be issued there.
  */
-contract PAXGImplementation {
+contract SEEDImplementation {
 
     /**
      * MATH
@@ -362,11 +362,11 @@ contract PAXGImplementation {
     }
 
     /**
-     * @dev Reclaim all PAXG at the contract address.
-     * This sends the PAXG tokens that this contract add holding to the owner.
+     * @dev Reclaim all SEED at the contract address.
+     * This sends the SEED tokens that this contract add holding to the owner.
      * Note: this is not affected by freeze constraints.
      */
-    function reclaimPAXG() external onlyOwner {
+    function reclaimSEED() external onlyOwner {
         uint256 _balance = balances[this];
         balances[this] = 0;
         balances[owner] = balances[owner].add(_balance);
